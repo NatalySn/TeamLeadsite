@@ -1,0 +1,605 @@
+@textColor: white;
+
+.lightTextSettings() {
+    font-size: 2rem;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: @textColor;
+    text-align: center;
+}
+
+.btn-settings() {
+    position: absolute;
+
+    background-color: rgb(19, 19, 63);
+    border-radius: 0.7rem;
+    .lightTextSettings();
+    border-color: rgb(155, 155, 196);
+}
+
+.block-2-li-settings() {
+    margin-top: 3rem;
+    list-style-type: none;
+
+    p {
+        margin-top: 1rem;
+    }
+
+    img {
+        width: 12rem;
+    }
+
+}
+
+html {
+    font-size: 10px;
+}
+
+// ПЕРВЫЙ БЛОК 
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+
+}
+
+.block-1 {
+    height: 100vh;
+
+    a {
+        .btn-settings();
+        margin-left: 95rem;
+        margin-top: 4rem;
+
+    }
+
+    a:hover {
+        background-color: rgb(61, 61, 124);
+        color: @textColor;
+    }
+
+    h1 {
+        font-size: 10rem;
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        color: @textColor;
+        text-align: center;
+    }
+
+
+    .row {
+        margin-top: 5rem;
+    }
+
+    .fCol {
+        img {
+            height: 70%;
+        }
+
+        text-align: center;
+    }
+
+    .sCol {
+        .darkBlock {
+            position: absolute;
+            background-color: black;
+            border-radius: 2rem;
+            opacity: 50%;
+            height: 24rem;
+            width: 50rem;
+            z-index: -1;
+        }
+
+        margin-top: 5rem;
+
+        li {
+            font-size: 2rem;
+            font-family: "Roboto Slab", serif;
+            font-weight: 300;
+            color: @textColor;
+            text-align: center;
+
+            padding-top: 3rem;
+            z-index: 1;
+        }
+    }
+}
+
+// ВТОРОЙ БЛОК
+
+.block-2 {
+    height: 100vh;
+    background: linear-gradient(rgb(6, 17, 39), rgb(50, 55, 107));
+
+    &-fCol {
+        li {
+            .block-2-li-settings();
+            .lightTextSettings();
+            font-size: 1.5rem;
+        }
+    }
+
+    &-sCol {
+        margin-top: 10rem;
+
+        li {
+            list-style-type: none;
+        }
+
+        img {
+            height: 30rem;
+        }
+
+        a {
+            margin-bottom: 5rem;
+            .btn-settings();
+            position: relative;
+        }
+
+        a:hover {
+            background-color: rgb(61, 61, 124);
+            color: @textColor;
+        }
+
+        text-align: center;
+    }
+
+    &-tCol {
+        li {
+            .block-2-li-settings();
+            .lightTextSettings();
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+// ТРЕТИЙ БЛОК
+
+.block-3 {
+
+    font-family: "Roboto Slab", serif;
+    height: 100vh;
+    background: linear-gradient(rgb(50, 55, 107), rgb(92, 119, 173));
+
+    &-container {
+        padding-top: 10rem;
+    }
+
+    #customers-testimonials .item {
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 15px;
+        opacity: .2;
+        -webkit-transform: scale3d(0.8, 0.8, 1);
+        transform: scale3d(0.8, 0.8, 1);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #FFF;
+        border-radius: 3px;
+    }
+
+    #customers-testimonials .owl-item.active.center .item {
+        opacity: 1;
+        -webkit-transform: scale3d(1.0, 1.0, 1);
+        transform: scale3d(1.0, 1.0, 1);
+        background-color: #FFF;
+    }
+
+    .owl-carousel .owl-item img {
+        transform-style: preserve-3d;
+        max-width: 90px;
+        margin: 0 auto 17px;
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+        background: #fff;
+        transform: translate3d(0px, -50%, 0px) scale(0.6);
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot {
+        display: inline-block;
+        outline: none;
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+        background: rgba(255, 255, 255, 0.4);
+        display: inline-block;
+        height: 20px;
+        margin: 0 2px 5px;
+        transform: translate3d(0px, -50%, 0px) scale(0.3);
+        transform-origin: 50% 50% 0;
+        transition: all 250ms ease-out 0s;
+        width: 20px;
+        border-radius: 100%;
+    }
+
+    .commo img {
+        width: 30px !important;
+        height: auto;
+        float: left;
+    }
+
+    .author-img img {
+        width: 60px !important;
+        height: auto;
+        border-radius: 100%;
+        margin-bottom: 0 !important;
+    }
+
+
+
+}
+
+// ЧЕТВЕРТЫЙ БЛОК
+
+.block-4 {
+    .lightTextSettings();
+    font-size: 1.5rem;
+    text-align: left;
+
+    height: 100vh;
+    background: linear-gradient(rgb(92, 119, 173), rgb(168, 185, 218));
+
+    .doctorimg {
+        text-align: center;
+
+        img {
+            height: 45rem;
+        }
+
+    }
+
+    .secrow {
+        text-align: center;
+        background: rgb(255, 255, 255);
+        height: 25rem;
+        padding-top: 3rem;
+        box-shadow: 0 8px 20px -4px;
+        border-radius: 1rem;
+
+        a {
+            margin-left: 12.5rem;
+            position: relative;
+            margin-top: 15rem;
+            .btn-settings();
+        }
+
+
+        p {
+            color: black;
+        }
+    }
+
+    &-container {
+        margin: 0;
+
+        td {
+            padding: 6rem 2rem;
+        }
+
+        img {
+            height: 4rem;
+        }
+    }
+
+
+
+}
+
+//ПЯТЫЙ БЛОК
+.block-5 {
+    font-family: "Roboto Slab", serif;
+    height: 100vh;
+    background: linear-gradient(rgb(168, 185, 218), rgb(211, 220, 238));
+
+    &-first {
+        text-align: center;
+
+        img {
+            position: absolute;
+            margin-top: 7rem;
+            margin-left: -5rem;
+            height: 25rem;
+
+        }
+
+        .price-block {
+            position: absolute;
+            padding-top: 33rem;
+            margin-left: -2rem;
+
+            h6 {
+                padding-top: 0.5rem;
+                font-family: "Roboto Slab", serif;
+                font-size: 2rem;
+                text-decoration: line-through;
+                color: rgb(126, 124, 124);
+            }
+
+            h5 {
+                display: block;
+                padding-left: 1rem;
+                font-family: "Roboto Slab", serif;
+                font-size: 3rem;
+                color: #ff0000;
+                text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+                animation: bounce-top 2s  both;
+                animation-duration: 5s;
+
+
+
+            }
+
+            @keyframes bounce-top {
+                0% {
+                    transform: translateY(-45px);
+                    animation-timing-function: ease-in;
+                    opacity: 0;
+                }
+
+                24% {
+                    opacity: 1;
+                }
+
+                40% {
+                    transform: translateY(-24px);
+                    animation-timing-function: ease-in;
+                }
+
+                65% {
+                    transform: translateY(-12px);
+                    animation-timing-function: ease-in;
+                }
+
+                82% {
+                    transform: translateY(-6px);
+                    animation-timing-function: ease-in;
+                }
+
+                93% {
+                    transform: translateY(-4px);
+                    animation-timing-function: ease-in;
+                }
+
+                25%,
+                55%,
+                75%,
+                87% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                }
+
+                100% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .price-block {
+        display: inline-block;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 6rem;
+        color: #002063;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .decor {
+        position: relative;
+        max-width: 400px;
+        margin: 50px auto 0;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 8px 20px -4px;
+    }
+
+
+
+
+    .form-inner {
+        padding: 50px;
+        font-family: "Roboto Slab", serif;
+        .tooltip1 {
+           
+            display: none;
+            padding: 10px;
+            z-index: 2;
+        }
+        .firstInput  {
+            position: relative;
+        }
+        .firstInput:hover .tooltip1 {
+            background: rgba(28, 22, 85, 0.5);
+            font-size: 1.2rem;
+            border-radius: 3px;
+            bottom: 4rem;
+            color: rgb(44, 44, 44);
+            display: inline;
+            height: 1rem;
+            left: 30rem;
+            width: 15rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            line-height: 1rem;
+            position: absolute;
+        }
+        
+        
+        .tooltip2 {
+            display: none;
+            padding: 10px;
+        }
+        .secondInput  {
+            position: relative;
+        }
+        .secondInput:hover .tooltip2 {
+            background: rgba(28, 22, 85, 0.5);
+            font-size: 1.2rem;
+            border-radius: 3px;
+            bottom: 4rem;
+            color: rgb(44, 44, 44);
+            display: inline;
+            height: 1rem;
+            left: 30rem;
+            width: 15rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            line-height: 1rem;
+            position: absolute;
+        }
+        
+        
+    
+    }
+
+    .form-inner input {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        background: #E9EFF6;
+        line-height: 40px;
+        border-width: 0;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+
+    }
+
+    .form-inner {
+    input[type="submit"] {
+        margin-top: 30px;
+        background-color: rgb(19, 19, 63);
+        border-radius: 0.7rem;
+        .lightTextSettings();
+        .tooltip {
+        display: none;
+        padding: 10px;
+    }
+}
+   
+
+    
+     
+    
+    
+        
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width:780px) {
+    .block-1{
+        a{
+            position: absolute;
+            margin-left: 30rem;
+            top:50rem;   
+        }
+        .row{
+            .sCol{
+                margin-left: 16rem;
+                .darkBlock{
+                    width: 40rem;
+                }
+               
+                
+                li{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    
+    .block-2{
+        height: 65vh;
+    }
+    .block-3{
+        
+        height:40vh;
+        .owl-carousel{
+            margin-top: -12rem;
+        }
+    }
+    .block-4{
+        height: 85vh;
+        .secrow{
+            left: 1.5rem;
+        }
+        a{
+            left: 18rem;
+        }
+    }
+    .block-5{
+        height: 60vh;
+    }
+}
+@media screen and (max-width:450px) {
+    .block-1{
+        a{
+            position: absolute;
+            margin-left: 30rem;
+            top:50rem;   
+        }
+        .row{
+            .sCol{
+                margin-left: 16rem;
+                .darkBlock{
+                    width: 40rem;
+                }
+               
+                
+                li{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    
+    .block-2{
+        height: 65vh;
+    }
+    .block-3{
+        
+        height:40vh;
+        .owl-carousel{
+            margin-top: -12rem;
+        }
+    }
+    .block-4{
+        height: 85vh;
+        .secrow{
+            left: 1.5rem;
+        }
+        a{
+            left: 18rem;
+        }
+    }
+    .block-5{
+        height: 60vh;
+    }
+}
